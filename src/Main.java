@@ -37,6 +37,8 @@ public class Main {
         ProductManager productManager = new ProductManager();
         productManager.addToCart(product1);
 
+        productManager.addToCart(product2);
+
 
     }
 }
