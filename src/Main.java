@@ -1,10 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Product product1 = new Product();
-        product1.id = 1;
-        product1.name = "Lenovo V14";
-        product1.unitPrice = 15000;
-        product1.detail = "16 GB RAM";
+        Product product1 = new Product(1,"Lenovo V14",15000,"16 GB RAM" );
 
         Product product2 = new Product();
         product2.id = 2;
@@ -31,12 +27,15 @@ public class Main {
         category1.name = "Bilgisayar";
 
         Category category2 = new Category();
-        category2.id = 1;
+        category2.id = 2;
         category2.name = "Ev/Bahçe";
 
         Category category3 = new Category();
-        category3.id = 1;
+        category3.id = 3;
         category3.name = "Bilgisayar";
+
+        ProductManager productManager = new ProductManager();
+        productManager.addToCart(product1);
 
 
     }
